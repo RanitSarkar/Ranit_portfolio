@@ -542,7 +542,7 @@
         <div class="col-md-4">
           <div class="card card-blog">
             <div class="card-img">
-              <a href="blog-single.html"><img src="img/startup.jpg" alt="" class="img-fluid"></a>
+              <a href="#"><img src="img/startup.jpg" alt="" class="img-fluid"></a>
             </div>
             <div class="card-body">
               <div class="card-category-box">
@@ -571,7 +571,7 @@
         <div class="col-md-4">
           <div class="card card-blog">
             <div class="card-img">
-              <a href="blog-single.html"><img src="img/post-2.jpg" alt="" class="img-fluid"></a>
+              <a href="#"><img src="img/post-2.jpg" alt="" class="img-fluid"></a>
             </div>
             <div class="card-body">
               <div class="card-category-box">
@@ -579,7 +579,7 @@
                   <h6 class="category">Seminar</h6>
                 </div>
               </div>
-              <h3 class="card-title"><a href="blog-single.html">A day worth rejoicing</a></h3>
+              <h3 class="card-title"><a href="#">A day worth rejoicing</a></h3>
               <p class="card-description">
                 I had the incredible opportunity to attend the Prakriti 2023 seminar at IIT Kharagpur, 
                 where I presented and pitched my idea. It was an honor to share my insights with such a prestigious organization. 
@@ -601,19 +601,17 @@
         <div class="col-md-4">
           <div class="card card-blog">
             <div class="card-img">
-              <a href="#"><img src="img/post-3.jpg" alt="" class="img-fluid"></a>
+              <a href="#"><img src="img/tracking.gif" alt="" class="img-fluid"></a>
             </div>
             <div class="card-body">
               <div class="card-category-box">
                 <div class="card-category">
-                  <h6 class="category">Web Design</h6>
+                  <h6 class="category">Innovations</h6>
                 </div>
               </div>
-              <h3 class="card-title"><a href="#">See more ideas about Travel</a></h3>
+              <h3 class="card-title"><a href="#">Ideas that makes a change are difference</a></h3>
               <p class="card-description">
-                Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
-                a pellentesque nec,
-                egestas non nisi.
+                Some ideas that originates might at a glance seem hard but once started to work by taking things in optimistic way can lead to a much deserved sucess.
               </p>
             </div>
             <div class="card-footer">
@@ -646,7 +644,7 @@
                 <div class="col-md-6">
                   <div class="title-box-2">
                     <h5 class="title-left">
-                      Send Message Us
+                      lets share our views....
                     </h5>
                   </div>
                   <div>
@@ -667,19 +665,13 @@
                           </div>
                         </div>
                         <div class="col-md-12 mb-3">
-                            <div class="form-group">
+                          <div class="form-group">
                               <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
                               <div class="validation"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-12 mb-3">
-                          <div class="form-group">
-                            <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                            <div class="validation"></div>
                           </div>
                         </div>
                         <div class="col-md-12">
-                          <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
+                          <button type="submit" class="button button-a button-big button-rouded" onclick="openEmail()">Send Message</button>
                         </div>
                       </div>
                     </form>
@@ -693,10 +685,7 @@
                   </div>
                   <div class="more-info">
                     <p class="lead">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum dolorem soluta quidem
-                      expedita aperiam aliquid at.
-                      Totam magni ipsum suscipit amet? Autem nemo esse laboriosam ratione nobis
-                      mollitia inventore?
+                      <img src="img/contact_ranit.png" alt="">
                     </p>
                     <ul class="list-ico">
                       <li><span class="ion-ios-location"></span>West Bengal, India</li>
@@ -706,10 +695,9 @@
                   </div>
                   <div class="socials">
                     <ul>
-                      <li><a href=""><span class="ico-circle"><i class="ion-social-facebook"></i></span></a></li>
-                      <li><a href=""><span class="ico-circle"><i class="ion-social-instagram"></i></span></a></li>
-                      <li><a href=""><span class="ico-circle"><i class="ion-social-twitter"></i></span></a></li>
-                      <li><a href=""><span class="ico-circle"><i class="ion-social-pinterest"></i></span></a></li>
+                      <li><a href="https://www.linkedin.com/in/ranit-sarkar-83b295209/"><span class="ico-circle"><i class="ion-social-linkedin"></i></span></a></li>
+                      <li><a href="https://www.youtube.com/channel/UCirfpHbkvkM9l4K4MVYh-Pw"><span class="ico-circle"><i class="ion-social-youtube"></i></span></a></li>
+                      <li><a href="https://unsplash.com/@ranit_sarkar"><span class="ico-circle"><i class="ion-social-pinterest"></i></span></a></li>
                     </ul>
                   </div>
                 </div>
@@ -755,6 +743,17 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+  <script>
+    function openEmail() {
+        var emailAddress = 'ranitsarkar71@gmail.com'; // Replace this with your email address
+        var subjectInput = document.getElementById('subject');
+        var subject = subjectInput.value;
+    
+        var mailtoLink = 'mailto:' + emailAddress + '?subject=' + encodeURIComponent(subject);
+    
+        window.open(mailtoLink, '_blank');
+    }
+    </script>
 
 </body>
 </html>
