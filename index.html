@@ -714,12 +714,13 @@
             <div class="copyright-box">
               <p class="copyright">&copy; Copyright <strong>Ranit</strong>. All Rights Reserved</p>
               <div class="credits">
-                Designed by Ranit Sarkar</a>
+                Designed by Ranit Sarkar <br><p>This page has been visited <span id="visitCount">0</span> times.</p></a>
               </div>
             </div>
           </div>
         </div>
       </div>
+      
     </footer>
   </section>
   <!--/ Section Contact-footer End /-->
@@ -753,6 +754,18 @@
     
         window.open(mailtoLink, '_blank');
     }
+    </script>
+    <script>
+      // Check if the visit count is stored in local storage
+      if (localStorage.getItem('visitCount')) {
+        let count = parseInt(localStorage.getItem('visitCount'));
+        count++;
+        localStorage.setItem('visitCount', count);
+        document.getElementById('visitCount').textContent = count;
+      } else {
+        localStorage.setItem('visitCount', 1);
+        document.getElementById('visitCount').textContent = 1;
+      }
     </script>
 
 </body>
